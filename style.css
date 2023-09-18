@@ -1,0 +1,116 @@
+@import url(assets\fonts\font.css);
+
+:root{
+    --color-background: #040D12;
+    --color-greem1: #183D3D;
+    --color-greem2: #49b61a;
+    --color-greem3: #1bbb23;
+    --color-whithe: #fff;
+    --color-gray: #0a310d;
+}
+
+*{
+    font-family: Roboto;
+}
+
+body{
+    background-color: var(--color-background);
+    color: var(--color-whithe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content--add-item{
+    display: flex;
+    align-items: center;
+    gap: 1.1rem ;
+    flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 0.6rem;
+}
+
+#input-new-task{
+    width: 25rem;
+    border-radius: 1.6rem;
+    padding-left: 25px;
+
+}
+
+#btn-new-task{
+    background-color: var(--color-greem1);
+    color: var(--color-whithe);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-new-task:hover{
+    background-color: var(--color-greem2);
+}
+
+#lista-tarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    padding: 0;
+}
+
+#lista-tarefas li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    align-items: center;
+}
+
+#lista-tarefas li:hover{
+    background-color: var(--color-whithe);
+    color: black;
+    transition: .4s;
+    padding-left: 1.2rem;
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--color-greem3);
+    color: var(--color-whithe);
+    padding: .3rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: var(--color-greem2);
+}
+
+/* Adicione uma classe para animação de deslize */
+/* Adicione uma classe para animação de deslizamento */
+.slide-out {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
