@@ -25,7 +25,7 @@ function newTask() {
         })
         localStorage.setItem(localStorageKey, JSON.stringify(values))
         showValues()
-        
+
     }
     input.value = ''
 }
@@ -47,28 +47,47 @@ function showValues() {
 }
 
 function removeItem(data) {
-  // Remove a task do localStorage
-  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
-  let index = values.findIndex(x => x.name == data)
-  values.splice(index, 1)
-  localStorage.setItem(localStorageKey, JSON.stringify(values))
+    // Remove a task do localStorage
+    let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
+    let index = values.findIndex(x => x.name == data)
+    values.splice(index, 1)
+    localStorage.setItem(localStorageKey, JSON.stringify(values))
 
-  // Aplica a animação
-  let task = document.querySelector(`.task[data-name="${data}"]`);
-  task.style.transform = "translateX(+700px) ";
-  setTimeout(() => {
-    task.remove();
-  }, 300);
+    // Aplica a animação
+    let task = document.querySelector(`.task[data-name="${data}"]`);
+    task.style.transform = "translateX(+800px) ";
+    setTimeout(() => {
+        task.remove();
+    }, 320);
 }
 
 function clearList() {
     // Remove todas as tarefas do localStorage
-    localStorage.removeItem(localStorageKey);
+    if (confirm('Tem certeza de que deseja limpar a lista de tarefas?')) {
+      localStorage.removeItem(localStorageKey);
   
-    // Limpa a lista de tarefas
-    let list = document.getElementById('lista-tarefas');
-    list.innerHTML = '';
+      // Remove a classe task-list do ul
+      let list = document.getElementById('lista-tarefas');
+      list.classList.remove('task-list');
+  
+      // Adiciona a propriedade transform a todos os elementos task
+      let tasks = document.querySelectorAll('.task');
+      for (let i = 0; i < tasks.length; i++) {
+        tasks[i].style.transition = 'transform 0.6s ease-out';
+      }
+  
+      // Anima cada elemento task para a direita
+      for (let i = 0; i < tasks.length; i++) {
+        tasks[i].style.transform = 'translateX(30px)';
+        setTimeout(() => {
+          // Remove o elemento task da lista
+          tasks[i].remove();
+        }, 100 * (i + 1));
+      }
+    }
   }
   
+
+
 
 showValues()
