@@ -107,10 +107,27 @@ body{
     background-color: var(--color-greem2);
 }
 
-/* Adicione uma classe para animação de deslize */
-/* Adicione uma classe para animação de deslizamento */
 .slide-out {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px){
+    #input-new-task{
+        width: 15rem;
+        border-radius: 1.6rem;
+        padding-left: 25px;
+    
+    }
+
+    #lista-tarefas li{
+        list-style-type: none;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
+        align-items: center;
+    }
 }
