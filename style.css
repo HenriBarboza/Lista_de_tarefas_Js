@@ -3,32 +3,43 @@
 :root{
     --color-background: #040D12;
     --color-greem1: #183D3D;
-    --color-greem2: #49b61a;
-    --color-greem3: #1bbb23;
+    --color-greem2: #1bbb23;
     --color-whithe: #fff;
-    --color-gray: #0a310d;
+    --color-gray: #3d3d3dfd;
+    --color-blue: #020a11ee ;
 }
 
 *{
     font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+
+.conteudo{
     background-color: var(--color-background);
     color: var(--color-whithe);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    width: 100%;
+    height: 1000px;
 }
 
-.content-lista{
+#titulo{
+    font-weight: 700;
+}
+
+.conteudo-lista{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
 }
 
-.content--add-item{
+.conteudo--add-item{
     display: flex;
     align-items: center;
     gap: 1.1rem ;
@@ -60,6 +71,40 @@ body{
     transition: 0.3s;
 }
 
+.off{
+    background-color: var(--color-blue) ;
+    color: var(--color-whithe);
+    
+}
+
+.off-footer{
+    background-color: var(--color-blue) ;
+    color: var(--color-whithe);
+    text-align: center;
+}
+
+.conteudo-off{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+
+    
+    
+}
+
+.conteudo-off a{
+    color: var(--color-whithe);
+    background-color: transparent;
+    transition: .4s;
+}
+
+.conteudo-off a :hover{
+    color: var(--color-gray);
+    background-color: transparent;
+}
+
+
 #btn-new-task:hover{
     background-color: var(--color-greem2);
 }
@@ -90,8 +135,8 @@ body{
 
 #btn-ok{
     border: none;
-    background-color: var(--color-greem3);
-    color: var(--color-whithe);
+    background-color: var(--color-whithe);
+    color: var(--color-greem2);
     padding: .3rem .8rem;
     border-radius: 50%;
     width: 50px;
@@ -105,7 +150,39 @@ body{
 
 #btn-ok:hover{
     background-color: var(--color-greem2);
+    color: var(--color-whithe);
 }
+
+.btn-open-menu{
+    border: none;
+    background-color: var(--color-background);
+    color: var(--color-whithe);
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transform: .4s;
+}
+
+.btn-open-menu:hover{
+    color: var(--color-gray);
+}
+
+.btn-close-menu{
+    border: none;
+    background-color: transparent;
+    color: var(--color-whithe);
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transform: .4s;
+}
+
+.btn-close-menu:hover{
+    color: var(--color-gray);
+}
+
+
+
 .task-list{
     transition: transform 0.5s step-end;
 }
