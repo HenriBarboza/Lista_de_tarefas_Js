@@ -17,9 +17,8 @@
 }
 
 
+
 .conteudo{
-    background-color: var(--color-background);
-    color: var(--color-whithe);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +47,6 @@
 
 #input-new-task,
 #btn-new-task{
-    border: none;
     font-size: 1.3rem;
     outline: none;
     padding: 0.6rem;
@@ -62,8 +60,6 @@
 }
 
 #btn-new-task{
-    background-color: var(--color-greem1);
-    color: var(--color-whithe);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -71,15 +67,8 @@
     transition: 0.3s;
 }
 
-.off{
-    background-color: var(--color-blue) ;
-    color: var(--color-whithe);
-    
-}
 
 .off-footer{
-    background-color: var(--color-blue) ;
-    color: var(--color-whithe);
     text-align: center;
 }
 
@@ -87,27 +76,22 @@
     padding-top: 5px;
     padding-bottom: 15px;
     display: flex;
-    justify-content: space-around;
-
-    
-    
+    justify-content: space-around; 
 }
 
-.conteudo-off a{
-    color: var(--color-whithe);
-    background-color: transparent;
-    transition: .4s;
+.ico-app{
+    margin: 10px 0 0 10px;
 }
 
-.conteudo-off a :hover{
-    color: var(--color-gray);
-    background-color: transparent;
+.btn-theme{
+    padding: 8px 18px;
+    margin: 10px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 7rem;
 }
 
-
-#btn-new-task:hover{
-    background-color: var(--color-greem2);
-}
 
 #lista-tarefas{
     display: flex;
@@ -127,16 +111,11 @@
 }
 
 #lista-tarefas li:hover{
-    background-color: var(--color-whithe);
-    color: black;
     transition: .4s;
     padding-left: 1.2rem;
 }
 
 #btn-ok{
-    border: none;
-    background-color: var(--color-whithe);
-    color: var(--color-greem2);
     padding: .3rem .8rem;
     border-radius: 50%;
     width: 50px;
@@ -148,40 +127,23 @@
     transition: .4s;
 }
 
-#btn-ok:hover{
-    background-color: var(--color-greem2);
-    color: var(--color-whithe);
-}
-
 .btn-open-menu{
     border: none;
-    background-color: var(--color-background);
-    color: var(--color-whithe);
     text-align: center;
     padding: 1rem;
     cursor: pointer;
     transform: .4s;
+    outline: none;
 }
 
-.btn-open-menu:hover{
-    color: var(--color-gray);
-}
 
 .btn-close-menu{
     border: none;
-    background-color: transparent;
-    color: var(--color-whithe);
     font-size: 1.5rem;
     text-align: center;
     cursor: pointer;
     transform: .4s;
 }
-
-.btn-close-menu:hover{
-    color: var(--color-gray);
-}
-
-
 
 .task-list{
     transition: transform 0.5s step-end;
@@ -198,7 +160,7 @@
         width: 15rem;
         border-radius: 1.6rem;
         padding-left: 25px;
-    
+        font-size: 1.1rem;
     }
 
     #lista-tarefas li{

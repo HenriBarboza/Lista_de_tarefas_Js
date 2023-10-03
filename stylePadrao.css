@@ -1,0 +1,97 @@
+:root{
+    --color-background: #051822;
+    --color-greem1: #306464;
+    --color-greem2: #1bbb23;
+    --color-whithe: #fff;
+    --color-gray: #3d3d3dfd;
+    --color-off: #020a11ee ;
+}
+
+#body{
+    background-color: var(--color-background);
+    color: var(--color-whithe);
+    transition: 0.3s;
+}
+
+#input-new-task
+,#btn-new-task{
+    border: none;
+}
+
+#btn-new-task{
+    background-color: var(--color-greem1);
+    color: var(--color-whithe);
+}
+
+.off{
+    background-color: var(--color-off) ;
+    color: var(--color-whithe);
+    
+}
+
+.off-footer{
+    background-color: var(--color-off) ;
+    color: var(--color-whithe);
+}
+
+.conteudo-off a{
+    color: var(--color-whithe);
+    background-color: transparent;
+    transition: .4s;
+}
+
+.conteudo-off a :hover{
+    color: var(--color-gray);
+    background-color: transparent;
+}
+
+#btn-new-task:hover{
+    background-color: var(--color-greem2);
+}
+
+#lista-tarefas li:hover{
+    background-color: var(--color-whithe);
+    color: black;
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--color-whithe);
+    color: var(--color-greem2);
+}
+
+#btn-ok:hover{
+    background-color: var(--color-greem2);
+    color: var(--color-whithe);
+}
+
+.btn-open-menu{
+    background-color: var(--color-background);
+    color: var(--color-whithe);
+}
+
+.btn-open-menu:hover{
+    color: var(--color-gray);
+}
+
+.btn-close-menu{
+    background-color: transparent;
+    color: var(--color-whithe);
+}
+
+.btn-close-menu:hover{
+    color: var(--color-gray);
+}
+
+.btn-theme{
+    color:var(--color-whithe);
+    background-color: transparent;
+    border: var(--color-whithe) solid 2px;
+    transition: .4s;
+}
+
+.btn-theme:hover{
+    color:var(--color-gray);
+    background-color: transparent;
+    border: var(--color-gray) solid 2px;
+}

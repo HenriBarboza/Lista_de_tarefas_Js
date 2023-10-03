@@ -1,0 +1,101 @@
+:root{
+    --color-black: #0c0c0c;
+    --color-white: #fff;
+    --color-gray: #535252fd;
+    --color-off: #e9f1fa ;
+}
+
+#body{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: 0.3s;
+}
+
+#input-new-task{
+    border: 2px solid var(--color-black);
+}
+
+#btn-new-task{
+    border: none;
+}
+
+#btn-new-task{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.off{
+    background-color: var(--color-off) ;
+    color: var(--color-black);
+    
+}
+
+.off-footer{
+    background-color: var(--color-off) ;
+    color: var(--color-black);
+}
+
+.conteudo-off a{
+    color: var(--color-black);
+    background-color: transparent;
+    transition: .4s;
+}
+
+.conteudo-off a :hover{
+    color: var(--color-gray);
+    background-color: transparent;
+}
+
+#btn-new-task:hover{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+}
+
+#lista-tarefas li:hover{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+#btn-ok{
+    border: 2px solid var(--color-black);
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+#btn-ok:hover{
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+
+.btn-open-menu{
+    background-color: var(--color-background);
+    color: var(--color-black);
+    background-color: transparent;
+}
+
+.btn-open-menu:hover{
+    color: var(--color-gray);
+}
+
+.btn-close-menu{
+    background-color: transparent;
+    color: var(--color-white);
+}
+
+.btn-close-menu:hover{
+    color: var(--color-gray);
+}
+
+.btn-theme{
+    color:var(--color-black);
+    background-color: transparent;
+    border: var(--color-black) solid 2px;
+    transition: .4s;
+}
+
+.btn-theme:hover{
+    color:var(--color-gray);
+    background-color: transparent;
+    border: var(--color-gray) solid 2px;
+}
