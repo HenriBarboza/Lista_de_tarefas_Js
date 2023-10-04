@@ -8,7 +8,6 @@
 #body{
     background-color: var(--color-white);
     color: var(--color-black);
-    transition: 0.3s;
 }
 
 #input-new-task{
@@ -80,8 +79,9 @@
 
 .btn-close-menu{
     background-color: transparent;
-    color: var(--color-white);
+    color: var(--color-black);
 }
+
 
 .btn-close-menu:hover{
     color: var(--color-gray);
@@ -93,6 +93,11 @@
     border: var(--color-black) solid 2px;
     transition: .4s;
 }
+.selecionado{
+    background-color: var(--color-black);
+    color: var(--color-off);
+}
+
 
 .btn-theme:hover{
     color:var(--color-gray);

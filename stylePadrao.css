@@ -10,7 +10,6 @@
 #body{
     background-color: var(--color-background);
     color: var(--color-whithe);
-    transition: 0.3s;
 }
 
 #input-new-task
@@ -88,6 +87,11 @@
     background-color: transparent;
     border: var(--color-whithe) solid 2px;
     transition: .4s;
+}
+
+.selecionado{
+    background-color: var(--color-whithe);
+    color: var(--color-off);
 }
 
 .btn-theme:hover{
